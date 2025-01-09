@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\HOCTAP\TTTNghiep2.0\DuAn_QLCY_Git\DuAn_QLCY\DuAn_QLCY
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/EmployeesList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbXBsb3llZXNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
