@@ -1,4 +1,6 @@
-﻿@model IEnumerable<DuAn_QLCY.Models.Department>
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@model IEnumerable<DuAn_QLCY.Models.Department>
 
 @{
     ViewData["Title"] = "DepartmentList";
@@ -51,3 +53,13 @@
 }
     </tbody>
 </table>
+@Html.PagedListPager((IPagedList)Model, page => Url.Action("DepartmentList"
+                ,
+                new { page = page }),
+                new X.PagedList.Mvc.Core.PagedListRenderOptions
+            {
+                ContainerDivClasses = new[] { "navigation" },
+                LiElementClasses = new[] { "page-item" },
+                PageClasses = new[] { "page-link" }
+            }
+                )
