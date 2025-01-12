@@ -26,6 +26,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\HOCTAP\TTTNghiep2.0\DuAn_QLCY_Git\DuAn_QLCY\DuAn_QLCY
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateEmployees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVFbXBsb3llZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/DeleteEmployees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWxldGVFbXBsb3llZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/DepartmentList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXBhcnRtZW50TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/EmployeesList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbXBsb3llZXNMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateEmployees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVFbXBsb3llZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Shared/Error.cshtml]
