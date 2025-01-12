@@ -50,8 +50,7 @@
               "RelativeToolTip": "DuAn_QLCY\\Views\\Home\\UpdateEmployeeType.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-12T10:46:53.856Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T10:46:53.856Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "DuAn_QLCY\\Views\\Home\\CreateEmployeeType.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-12T10:44:16.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T10:44:16.901Z"
             },
             {
               "$type": "Document",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "DuAn_QLCY\\Views\\Home\\EmployeeTypeList.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-12T10:42:01.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T10:42:01.623Z"
             },
             {
               "$type": "Document",
@@ -87,7 +84,7 @@
               "RelativeDocumentMoniker": "DuAn_QLCY\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\Controllers\\HomeController.cs",
               "RelativeToolTip": "DuAn_QLCY\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAiwEwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T15:17:16.456Z",
               "EditorCaption": ""
