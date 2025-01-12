@@ -34,6 +34,83 @@ namespace DuAn_QLCY.Controllers
             var Department = _qtCtPmContext.Departments.ToPagedList(page ?? 1, 10);
             return View(Department);
         }
+		public IActionResult CreateDepartment()
+		{
+			return View();
+		}
+
+		[HttpPost]
+		public IActionResult CreateDepartment(Department department)
+		{
+			_qtCtPmContext.Departments.Add(department);
+			_qtCtPmContext.SaveChanges();
+			return RedirectToAction("DepartmentList");
+		}
+        public IActionResult UpdateDepartment(int id)
+        {
+            var department = _qtCtPmContext.Departments.Where(t => t.DepartmentId == id).FirstOrDefault();
+            return View(department);
+        }
+        [HttpPost]
+        public IActionResult UpdateDepartment(Department department)
+        {
+            _qtCtPmContext.Departments.Update(department);
+            _qtCtPmContext.SaveChanges();
+            return RedirectToAction("DepartmentList");
+        }
+
+        public IActionResult DeleteDepartment(int id)
+        {
+            var department = _qtCtPmContext.Departments.Where(t => t.DepartmentId == id).FirstOrDefault();
+            _qtCtPmContext.Remove(department);
+            _qtCtPmContext.SaveChanges();
+            return RedirectToAction("DepartmentList");
+        }
+
+
+
+
+        public IActionResult EmployeeTypeList()
+        {
+            var employeetype = _qtCtPmContext.EmployeeTypes.ToList();
+            return View(employeetype);
+        }
+        public IActionResult CreateEmployeeType()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult CreateEmployeeType(EmployeeType employeetype)
+        {
+            _qtCtPmContext.EmployeeTypes.Add(employeetype);
+            _qtCtPmContext.SaveChanges();
+            return RedirectToAction("EmployeeTypeList");
+        }
+        public IActionResult UpdateEmployeeType(int id)
+        {
+            var employeetype = _qtCtPmContext.EmployeeTypes.Where(t => t.TypeId == id).FirstOrDefault();
+            return View(employeetype);
+        }
+        [HttpPost]
+        public IActionResult UpdateEmployeeType(EmployeeType employeetype)
+        {
+            _qtCtPmContext.EmployeeTypes.Update(employeetype);
+            _qtCtPmContext.SaveChanges();
+            return RedirectToAction("EmployeeTypeList");
+        }
+
+        public IActionResult DeleteEmployeeType(int id)
+        {
+            var employeetype = _qtCtPmContext.EmployeeTypes.Where(t => t.TypeId == id).FirstOrDefault();
+            _qtCtPmContext.Remove(employeetype);
+            _qtCtPmContext.SaveChanges();
+            return RedirectToAction("EmployeeTypeList");
+        }
+
+
+
+
         public IActionResult EmployeesList(int? page)
         {
             var Employees = _qtCtPmContext.Employees.Include(a => a.Department).Include(a => a.Type).ToPagedList(page ?? 1, 10);
