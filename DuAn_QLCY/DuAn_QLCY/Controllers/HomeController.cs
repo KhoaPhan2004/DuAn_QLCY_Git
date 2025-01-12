@@ -114,7 +114,7 @@ namespace DuAn_QLCY.Controllers
         public IActionResult EmployeesList(int? page)
         {
             var Employees = _qtCtPmContext.Employees.Include(a => a.Department).Include(a => a.Type).ToPagedList(page ?? 1, 10);
-            return View(Employees);
+            return Json(Employees);
         }
         public IActionResult CreateEmployees()
         {
