@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E2F4619D-18A8-467A-B8D2-B008E8BDA813}|DuAn_QLCY\\DuAn_QLCY.csproj|d:\\hoctap\\tttnghiep2.0\\duan_qlcy_git\\duan_qlcy\\duan_qlcy\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2F4619D-18A8-467A-B8D2-B008E8BDA813}|DuAn_QLCY\\DuAn_QLCY.csproj|solutionrelative:duan_qlcy\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2F4619D-18A8-467A-B8D2-B008E8BDA813}|DuAn_QLCY\\DuAn_QLCY.csproj|d:\\hoctap\\tttnghiep2.0\\duan_qlcy_git\\duan_qlcy\\duan_qlcy\\views\\home\\employeetypelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2F4619D-18A8-467A-B8D2-B008E8BDA813}|DuAn_QLCY\\DuAn_QLCY.csproj|solutionrelative:duan_qlcy\\views\\home\\employeetypelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2F4619D-18A8-467A-B8D2-B008E8BDA813}|DuAn_QLCY\\DuAn_QLCY.csproj|d:\\hoctap\\tttnghiep2.0\\duan_qlcy_git\\duan_qlcy\\duan_qlcy\\views\\home\\updateemployeetype.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2F4619D-18A8-467A-B8D2-B008E8BDA813}|DuAn_QLCY\\DuAn_QLCY.csproj|solutionrelative:duan_qlcy\\views\\home\\updateemployeetype.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2F4619D-18A8-467A-B8D2-B008E8BDA813}|DuAn_QLCY\\DuAn_QLCY.csproj|d:\\hoctap\\tttnghiep2.0\\duan_qlcy_git\\duan_qlcy\\duan_qlcy\\views\\home\\createemployeetype.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2F4619D-18A8-467A-B8D2-B008E8BDA813}|DuAn_QLCY\\DuAn_QLCY.csproj|solutionrelative:duan_qlcy\\views\\home\\createemployeetype.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +39,55 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateEmployeeType.cshtml",
+              "DocumentMoniker": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\Views\\Home\\UpdateEmployeeType.cshtml",
+              "RelativeDocumentMoniker": "DuAn_QLCY\\Views\\Home\\UpdateEmployeeType.cshtml",
+              "ToolTip": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\Views\\Home\\UpdateEmployeeType.cshtml",
+              "RelativeToolTip": "DuAn_QLCY\\Views\\Home\\UpdateEmployeeType.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T10:46:53.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateEmployeeType.cshtml",
+              "DocumentMoniker": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\Views\\Home\\CreateEmployeeType.cshtml",
+              "RelativeDocumentMoniker": "DuAn_QLCY\\Views\\Home\\CreateEmployeeType.cshtml",
+              "ToolTip": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\Views\\Home\\CreateEmployeeType.cshtml",
+              "RelativeToolTip": "DuAn_QLCY\\Views\\Home\\CreateEmployeeType.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T10:44:16.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeTypeList.cshtml",
+              "DocumentMoniker": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\Views\\Home\\EmployeeTypeList.cshtml",
+              "RelativeDocumentMoniker": "DuAn_QLCY\\Views\\Home\\EmployeeTypeList.cshtml",
+              "ToolTip": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\Views\\Home\\EmployeeTypeList.cshtml",
+              "RelativeToolTip": "DuAn_QLCY\\Views\\Home\\EmployeeTypeList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T10:42:01.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "DuAn_QLCY\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "DuAn_QLCY\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T15:17:16.456Z",
+              "EditorCaption": ""
             }
           ]
         }
