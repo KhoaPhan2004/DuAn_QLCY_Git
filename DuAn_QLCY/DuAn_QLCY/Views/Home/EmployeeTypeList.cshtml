@@ -1,35 +1,54 @@
 ﻿@model IEnumerable<DuAn_QLCY.Models.EmployeeType>
 
 @{
-    ViewData["Title"] = "EmployeeTypeList";
+    ViewData["Title"] = "Danh Sách Loại Nhân Viên";
 }
 
-<h1>EmployeeTypeList</h1>
+<div class="container mt-5">
+    <h1 class="text-center text-primary mb-4">Danh Sách Loại Nhân Viên</h1>
+    <p class="text-center text-muted mb-4">Dưới đây là danh sách các loại nhân viên. Bạn có thể chỉnh sửa, xem chi tiết hoặc xóa thông tin.</p>
+    
+    <div class="text-end mb-3">
+        <a asp-action="CreateEmployeeType" class="btn btn-success btn-lg">Tạo Mới Loại Nhân Viên</a>
+    </div>
 
-<p>
-    <a asp-action="CreateEmployeeType">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.TypeName)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TypeName)
-            </td>
-            <td>
-                    <a asp-action="UpdateEmployeeType" asp-route-id="@item.TypeId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.TypeId">Details</a> |
-                    <a asp-action="DeleteEmployeeType" asp-route-id="@item.TypeId">Delete</a>
-            </td>
-        </tr>
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.TypeName)</th>
+                <th class="text-center">Hành Động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.TypeName)</td>
+                    <td class="text-center">
+                        <div class="btn-group" role="group">
+                            <a asp-action="UpdateEmployeeType" asp-route-id="@item.TypeId" class="btn btn-warning btn-sm btn-action">Sửa</a>
+                            <a asp-action="Details" asp-route-id="@item.TypeId" class="btn btn-info btn-sm btn-action">Chi Tiết</a>
+                            <a asp-action="DeleteEmployeeType" asp-route-id="@item.TypeId" class="btn btn-danger btn-sm btn-action" onclick="return confirm('Bạn có chắc chắn muốn xóa?');">Xóa</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
-    </tbody>
-</table>
+
+<style>
+    .btn-action {
+        font-size: 1.1rem; /* Tăng kích thước chữ */
+        padding: 8px 16px; /* Tăng padding cho nút */
+        margin-right: 3px; /* Khoảng cách giữa các nút */
+        border-radius: 8px;
+    }
+
+    .btn-group .btn {
+        margin-right: 3px; /* Khoảng cách giữa các nút trong nhóm */
+    }
+</style>

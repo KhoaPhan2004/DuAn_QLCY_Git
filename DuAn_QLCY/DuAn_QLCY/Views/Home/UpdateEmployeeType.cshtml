@@ -1,32 +1,36 @@
 ﻿@model DuAn_QLCY.Models.EmployeeType
 
 @{
-    ViewData["Title"] = "UpdateEmployeeType";
+    ViewData["Title"] = "Cập Nhật Loại Nhân Viên";
 }
 
-<h1>UpdateEmployeeType</h1>
+<div class="container mt-5">
+    <h1 class="text-center text-primary mb-4">Cập Nhật Loại Nhân Viên</h1>
+    <p class="text-center text-muted mb-4">Cập nhật thông tin loại nhân viên vào biểu mẫu bên dưới. Các trường có dấu <span class="text-danger">*</span> là bắt buộc.</p>
 
-<h4>EmployeeType</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="UpdateEmployeeType">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="TypeId" />
-            <div class="form-group">
-                <label asp-for="TypeName" class="control-label"></label>
-                <input asp-for="TypeName" class="form-control" />
-                <span asp-validation-for="TypeName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <form asp-action="UpdateEmployeeType" class="bg-light p-4 rounded shadow">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <!-- Trường ID (ẩn) -->
+                <input type="hidden" asp-for="TypeId" />
+
+                <!-- Tên Loại Nhân Viên -->
+                <div class="mb-3">
+                    <label asp-for="TypeName" class="form-label">Tên Loại Nhân Viên <span class="text-danger">*</span></label>
+                    <input asp-for="TypeName" class="form-control" placeholder="Nhập tên loại nhân viên" />
+                    <span asp-validation-for="TypeName" class="text-danger"></span>
+                </div>
+
+                <!-- Nút Save và Quay lại -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <input type="submit" value="Lưu" class="btn btn-primary px-5 py-2" />
+                    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

@@ -1,7 +1,7 @@
 ﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand {
+/* a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
@@ -45,4 +45,1076 @@ button.accept-policy {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+} */
+
+/* Sidebar Container */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #f8f9fa;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  position: fixed;
+  top: 73px;
+  transition: transform 0.3s ease-in-out; /* Thêm hiệu ứng khi chuyển đổi */
 }
+
+.sidebar.closed {
+  transform: translateX(-100%); /* Ẩn sidebar khi đóng */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo-icon {
+  margin-right: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-header {
+  font-size: 12px;
+  color: #6b6b6b;
+  margin: 10px 0 5px 20px;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #e0e0e0;
+}
+
+.sub-menu {
+  list-style: none;
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+.sub-menu a {
+  display: block;
+  color: #555;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+.badge {
+  background-color: #ff9800;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+/* Hamburger menu on mobile */
+.hamburger {
+  display: none;
+}
+
+.close-sidebar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 24px;
+  color: #333;
+  z-index: 100;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .close-sidebar {
+      display: unset;
+  }
+  .sidebar{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .nav-link {
+    padding: 8px 15px;
+  }
+
+  /* Display hamburger icon on mobile */
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+  }
+  .hamburger.hidden {
+    display: none; /* Ẩn hamburger khi sidebar mở */
+  }
+}
+
+
+/* Calendar */
+/* Calendar Header */
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 20px;
+background-color: #f3f4f6;
+border-bottom: 1px solid #d1d5db;
+}
+
+.header h2 {
+margin: 0;
+font-size: 24px;
+font-weight: bold;
+padding: 5px;
+}
+
+/* Radio Group Styling */
+.radio-group {
+display: flex;
+flex-direction: row;
+gap: 20px;
+}
+
+.radio-group label {
+display: flex;
+align-items: center;
+gap: 8px;
+margin: 0;
+}
+
+/* Date Display */
+.date-display {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+/* Buttons */
+.sync-button,
+.add-task-button {
+background-color: #3b82f6;
+color: white;
+padding: 8px 16px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+font-size: 14px;
+}
+
+.sync-button:hover, 
+.add-task-button:hover {
+background-color: #2563eb;
+animation: pulse 1s infinite;
+}
+
+/* Calendar Container */
+.calendar-container {
+font-family: Arial, sans-serif;
+background-color: #e6f7ff;
+padding: 20px;
+max-width: 800px;
+margin: 30px 0 0 200px  !important;/* Thêm margin-top: 20px và margin-left: 170px */
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+border-radius: 12px;
+border: 2px solid #007bff;
+}
+
+
+/* Calendar Styles */
+.fc {
+font-size: 0.9rem;
+color: #333;
+}
+
+.fc-daygrid-day {
+background-color: #f0f8ff;
+border: 1px solid #ccc;
+}
+
+.fc-daygrid-day-number {
+font-size: 0.9rem;
+font-weight: bold;
+color: #007bff;
+}
+
+/* Toolbar */
+.fc-toolbar {
+background-color: #007bff;
+color: #fff;
+padding: 10px;
+border-radius: 5px;
+}
+
+.fc-toolbar-title {
+color: #fff;
+font-weight: bold;
+}
+
+.fc-button {
+background-color: #007bff;
+color: #fff;
+border: none;
+}
+
+.fc-button:hover {
+background-color: #0056b3;
+}
+
+/* Overlay Background */
+/* .form-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 10;
+}
+
+/* Form Container */
+/* .form-container {
+background: #fff;
+padding: 30px;
+border-radius: 12px;
+width: 600px;
+max-height: 80%;
+overflow-y: auto;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+font-family: 'Arial', sans-serif;
+margin: auto;
+} */
+
+/* Form Title */
+/* .form-container h2 {
+text-align: center;
+margin-bottom: 20px;
+color: #333;
+font-size: 1.8rem;
+font-weight: bold;
+} */ */
+
+/* General Adjustments */
+body {
+margin: 0;
+padding: 0;
+background-color: #f9fafb;
+}
+
+/* Dùng để khung  */
+.calendars-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+margin-top: 50px;
+margin-left: 250px;
+}
+
+
+/* Form Group Wrapper */
+.form-group {
+margin-bottom: 20px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+/* Label Styling */
+label {
+display: block;
+margin-bottom: 8px;
+font-weight: bold;
+color: #555;
+font-size: 1rem;
+}
+
+/* Input, Select, and Textarea Styling */
+.form-container input[type="text"],
+.form-container input[type="datetime-local"],
+.form-container select,
+.form-container textarea {
+width: 100%;
+padding: 14px; /* Increased padding */
+font-size: 1.1rem; /* Larger font size */
+border: 1px solid #ccc;
+border-radius: 8px; /* Rounded corners */
+box-sizing: border-box;
+transition: box-shadow 0.3s ease;
+}
+
+.form-container input[type="text"],
+.form-container input[type="datetime-local"],
+.form-container select {
+height: 40px; /* Uniform height for input fields and select */
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="datetime-local"]:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+outline: none;
+}
+
+/* Increase size for select elements */
+.form-container select {
+padding: 4px 20px;
+font-size: 14px;
+}
+
+/* Textarea Customization */
+.form-container textarea {
+resize: vertical;
+height: 100px; /* Larger height for textarea */
+}
+
+/* Checkbox Label Styling */
+.form-container input[type="checkbox"] {
+margin-right: 8px;
+}
+
+/* Action Buttons */
+.form-actions {
+display: flex;
+justify-content: space-between;
+gap: 10px;
+}
+
+button {
+flex: 1;
+padding: 16px 24px; /* Increased button size */
+font-size: 1.2rem; /* Larger font size */
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"] {
+background-color: #4caf50;
+color: white;
+}
+
+button[type="submit"]:hover {
+background-color: #45a049;
+transform: translateY(-2px);
+}
+
+button[type="button"] {
+background-color: #f44336;
+color: white;
+padding: 10px;
+}
+
+button[type="button"]:hover {
+background-color: #e53935;
+transform: translateY(-2px);
+}
+
+/* Radio Button Group */
+.form-group label {
+display: flex;
+align-items: center;
+gap: 8px;
+font-weight: normal;
+color: #444;
+}
+
+input[type="radio"] {
+margin: 0;
+}
+
+/* bảng event */
+.modal-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+}
+
+.modal-container {
+background: #fff;
+border-radius: 12px;
+box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+width: 500px;
+max-width: 90%;
+padding: 25px; /* Reduced padding for a smaller modal */
+position: relative;
+font-family: Arial, sans-serif;
+}
+
+.modal-container h3 {
+font-size: 1.6rem; /* Slightly smaller heading */
+font-weight: bold;
+color: #333;
+margin-bottom: 10px;
+text-align: center;
+}
+
+.modal-container p {
+font-size: 1.1rem;
+color: #555;
+margin: 8px 0;
+line-height: 1.5;
+}
+
+.modal-container p strong {
+color: #222;
+}
+
+.modal-actions {
+margin-top: 20px;
+display: flex;
+justify-content: center;
+gap: 10px; /* Reduced gap between buttons */
+}
+
+.modal-actions button {
+background-color: #3b82f6;
+color: #fff;
+border: none;
+padding: 8px 16px; /* Smaller padding */
+border-radius: 6px;
+font-size: 0.9rem; /* Smaller text */
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.modal-actions button.delete-button {
+background-color: #f44336;
+}
+
+.modal-actions button:hover {
+background-color: #2563eb; /* For blue button */
+}
+
+.modal-actions button.delete-button:hover {
+background-color: #d32f2f; /* For red button */
+}
+
+/* Add a little space between content sections */
+.modal-container .description-section {
+margin-top: 15px;
+text-align: left;
+padding: 0 5px;
+}
+
+.modal-container .description-section p {
+font-size: 1rem; /* Slightly smaller description text */
+color: #444;
+margin: 5px 0;
+}
+
+/* Close button positioning */
+.modal-close-button {
+position: absolute;
+top: 10px; /* Adjusted for better alignment */
+right: 10px; /* Moved to the right edge */
+background: transparent;
+border: none;
+font-size: 1.5rem;
+color: #999;
+cursor: pointer;
+transition: color 0.3s ease;
+}
+
+.modal-close-button:hover {
+color: #333;
+}
+
+.close-button {
+position: absolute;
+top: 10px; /* Adjusts the top distance */
+right: 30px; /* Moves it closer to the right edge */
+background: transparent;
+border: none;
+font-size: 1.8rem; /* Size of the "×" symbol */
+color: #999;  
+cursor: pointer;
+transition: color 0.3s ease;
+}
+
+.close-button:hover {
+color: #333; /* Darker color when hovered */
+}
+
+.title-calendar{
+font-size: 0.8em;
+  font-weight: bold;
+  border-right: 2px solid #000;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 15ch; /* Số ký tự hiển thị */
+  animation: typing 3s steps(15) infinite, blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+from {
+  width: 0;
+}
+to {
+  width: 15ch;
+}
+}
+
+@keyframes blink {
+from, to {
+  border-color: transparent;
+}
+50% {
+  border-color: black;
+}
+}
+
+
+.title-date {
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b, #86a8e7, #7f7fd5);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-move 3s linear infinite;
+}
+
+@keyframes gradient-move {
+0% {
+  background-position: 0% 50%;
+}
+100% {
+  background-position: 100% 50%;
+}
+}
+
+
+/* animation nút */
+.add-btn {
+
+border: none;
+color: white;
+text-align: center;
+font-size: 16px;
+cursor: pointer;
+transition: box-shadow 0.3s ease;
+}
+
+
+@keyframes pulse {
+0% { box-shadow: 0 0 5px #2563eb; }
+50% { box-shadow: 0 0 20px #2563eb; }
+100% { box-shadow: 0 0 5px #2563eb; }
+}
+
+.add-cc {
+font-size: 24px;
+font-weight: bold;
+color: #333;
+transform: translateX(-100%);
+animation: slideInLeft 1s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+0% { transform: translateX(-100%); }
+100% { transform: translateX(0); }
+}
+
+.tilte-form {
+font-size: 24px;
+font-weight: bold;
+color: #333;
+opacity: 0;
+animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+body {
+  background: #f5f7fa;
+}
+
+
+.form-container {
+  width: 400px;
+  margin: auto;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Tổng thể */
+.form-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.6); /* Hiệu ứng nền mờ */
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+}
+
+.form-container {
+background: #ffffff;
+width: 450px;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+from {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+h2.add-cc {
+font-size: 24px;
+margin-bottom: 20px;
+color: #333;
+text-align: center;
+}
+
+/* Label và Input */
+.form-container label {
+display: block;
+font-size: 14px;
+font-weight: bold;
+margin-bottom: 5px;
+color: #555;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid #ddd;
+border-radius: 5px;
+font-size: 14px;
+transition: border-color 0.3s ease-in-out;
+}
+
+.form-container input:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+border-color: #007bff; /* Màu xanh nổi bật */
+outline: none;
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Radio Group */
+.radio-group label {
+display: inline-block;
+margin-right: 20px;
+font-size: 14px;
+color: #333;
+}
+
+.radio-group input[type="radio"] {
+margin-right: 5px;
+}
+
+/* Button */
+.form-actions {
+display: flex;
+justify-content: space-between;
+}
+
+.form-actions button {
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 14px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+
+.form-actions button[type="submit"] {
+background-color: #007bff;
+color: white;
+}
+
+.form-actions button[type="submit"]:hover {
+background-color: #0056b3;
+}
+
+.form-actions button[type="button"] {
+background-color: #6c757d;
+color: white;
+}
+
+.form-actions button[type="button"]:hover {
+background-color: #5a6268;
+}
+
+/* Management list */
+/* Container for the employee list */
+
+.employee-list-container {
+margin: 0;
+padding: 20px;
+width: calc(100% - 250px);
+position: fixed;
+top: 73px;
+left: 250px;
+bottom: 0;
+background-color: #ffffff;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+z-index: 10;
+overflow-y: auto;
+overflow-x: auto; /* Thêm cuộn ngang */
+}
+
+.table-responsive {
+overflow-x: auto; /* Thêm cuộn ngang cho phần bảng */
+}
+
+/* Bảng không cho kéo qua kéo lại và cho phép cuộn */
+.table-container {
+overflow-x: auto; /* Thêm thanh cuộn ngang khi cần thiết */
+max-width: 100%; /* Giới hạn chiều rộng của container */
+}
+
+/* Sửa lại table-layout để tự động điều chỉnh chiều rộng theo dữ liệu */
+.table {
+width: 100%;
+table-layout: auto; /* Điều chỉnh chiều rộng tự động theo dữ liệu */
+border-collapse: collapse;
+}
+
+.table th, .table td {
+text-align: left;
+font-size: 16px;
+padding: 15px; /* Tăng chiều cao của ô */
+color: #333;
+background-color: #f0f8ff; /* Màu xanh da trời cho ô */
+border-bottom: 1px solid #ddd;
+min-width: 150px;
+}
+
+.table th {
+background-color: #87CEEB; /* Màu xanh da trời cho tiêu đề */
+color: #fff;
+}
+
+.table tbody tr:hover td {
+background-color: #e0f7fa; /* Màu nền khi hover (xanh nhạt) */
+transition: background-color 0.3s ease;
+}
+
+/* Nút chỉnh sửa và xóa đều và cách nhau */
+.btn {
+font-size: 14px;
+padding: 10px 20px; /* Tăng kích thước nút */
+border-radius: 5px;
+font-weight: 500;
+border: 1px solid transparent;
+transition: all 0.3s ease;
+text-transform: uppercase; /* Viết hoa chữ trong nút */
+margin-right: 15px; /* Cách nhau nhiều hơn */
+margin-bottom: 10px; /* Cách nhau từ trên xuống dưới */
+}
+
+/* Nút chỉnh sửa (màu xanh da trời) */
+.btn-edit {
+background-color: #87CEEB; /* Màu xanh da trời */
+border-color: #87CEEB;
+color: #fff;
+}
+
+.btn-edit:hover {
+background-color: #fff;
+color: #87CEEB;
+border-color: #87CEEB;
+transform: scale(1.1); /* Phóng to nút khi hover */
+}
+
+/* Nút xóa (màu đỏ) */
+.btn-delete {
+background-color: #f44336; /* Màu đỏ */
+border-color: #f44336;
+color: #fff;
+}
+
+.btn-delete:hover {
+background-color: #fff;
+color: #f44336;
+border-color: #f44336;
+transform: scale(1.1); /* Phóng to nút khi hover */
+}
+
+/* Nút nhỏ */
+.btn-sm {
+padding: 6px 12px; /* Kích thước nhỏ hơn */
+}
+
+
+
+
+@media (max-width: 768px) {
+.employee-list-container {
+  width: 100%;
+  left: 0;
+  top: 65px;
+}
+
+.table th,
+.table td {
+  font-size: 13px;
+  padding: 10px;
+}
+
+.btn-sm {
+  padding: 5px 8px;
+}
+}
+/* management- EmployeeForm */
+/* EmployeeManagement.css */
+.title {
+text-align: center;
+font-size: 2rem;
+font-weight: bold;
+color: #66a2db;
+margin-bottom: 20px;
+opacity: 0;
+animation: fadeIn 2s ease-out forwards;
+}
+
+/* Animation để tiêu đề xuất hiện */
+@keyframes fadeIn {
+0% {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+.sidebar {
+  width: 250px;
+  background: #f4f4f4;
+  padding: 15px;
+  border-right: 1px solid #ccc;
+}
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-item {
+  margin-bottom: 10px;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+.nav-header {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 10px;
+}
+.badge {
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+/* form chỉnh sửa employees */
+/* Container của form chỉnh sửa */
+/* Định dạng tổng quan cho form */
+/* Đảm bảo form dễ nhìn và dễ sử dụng trên mọi thiết bị */
+/* Định dạng navbar tổng thể */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Logo và thương hiệu */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 24px;
+  margin-right: 8px;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Thanh tìm kiếm */
+.navbar-search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-search input {
+  padding: 3px 18px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  outline: none;
+  width: 400px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-left: 60px;
+}
+
+/* Các icon và avatar */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.avatar img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin-right: 60px;
+}
+
+.logo {
+  cursor: pointer; /* Thêm dòng này */
+}
+
+@media (max-width: 768px) {
+    /* Hide the search bar */
+    .navbar-search {
+      display: none;
+    }
+  
+    /* Adjust the navbar to center logo */
+    .navbar {
+      justify-content: space-between;
+      padding: 10px;
+    }
+  
+    /* Hamburger menu */
+    .navbar-logo {
+      display: flex;
+      align-items: center;
+    }
+  
+    /* Center logo */
+    .navbar-logo img {
+      margin: 0 auto; /* Center the logo */
+      display: block;
+      height: 24px;
+    }
+  
+    /* Icon section */
+    .navbar-icons {
+      display: flex;
+      align-items: center;
+    }
+  
+    .icon-btn {
+      margin-right: 8px; /* Adjust spacing */
+    }
+
+    .logo {
+        margin-left: 30px;
+    }
+  
+    /* Avatar styles */
+    .avatar img {
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      margin-right: 40px;
+    }
+  }
+  
+  
+  
