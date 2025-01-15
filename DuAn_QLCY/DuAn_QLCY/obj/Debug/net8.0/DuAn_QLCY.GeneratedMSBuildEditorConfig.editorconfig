@@ -26,6 +26,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\HOCTAP\TTTNghiep2.0\DuAn_QLCY_Git\DuAn_QLCY\DuAn_QLCY
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/ClientsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDbGllbnRzTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateClients.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVDbGllbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateDepartment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVEZXBhcnRtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,8 +42,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVFbXBsb3llZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateEmployeeTechnologies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVFbXBsb3llZVRlY2hub2xvZ2llcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateEmployeeTrainings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVFbXBsb3llZVRyYWluaW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateEmployeeType.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVFbXBsb3llZVR5cGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateEmploymentContracts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVFbXBsb3ltZW50Q29udHJhY3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVQcm9qZWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateTasks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVUYXNrcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateTechnologies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVUZWNobm9sb2dpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateTrainingPrograms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVUcmFpbmluZ1Byb2dyYW1zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/DeleteEmployees.cshtml]
@@ -46,12 +82,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXBhcnRtZW50TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/DetailEmployees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxFbXBsb3llZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/EmployeesList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbXBsb3llZXNMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/EmployeeTechnologiesList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbXBsb3llZVRlY2hub2xvZ2llc0xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/EmployeeTrainingsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbXBsb3llZVRyYWluaW5nc0xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/EmployeeTypeList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbXBsb3llZVR5cGVMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/EmploymentContractsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbXBsb3ltZW50Q29udHJhY3RzTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/Index.cshtml]
@@ -62,6 +114,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/ProjectList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9qZWN0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/TasksList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUYXNrc0xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/TechnologiesList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZWNobm9sb2dpZXNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/TrainingProgramsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUcmFpbmluZ1Byb2dyYW1zTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateClients.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVDbGllbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateDepartment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVEZXBhcnRtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -70,8 +142,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVFbXBsb3llZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateEmployeeTechnologies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVFbXBsb3llZVRlY2hub2xvZ2llcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateEmployeeTrainings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVFbXBsb3llZVRyYWluaW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateEmployeeType.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVFbXBsb3llZVR5cGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateEmploymentContracts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVFbXBsb3ltZW50Q29udHJhY3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVQcm9qZWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateTasks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVUYXNrcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateTechnologies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVUZWNobm9sb2dpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateTrainingPrograms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVUcmFpbmluZ1Byb2dyYW1zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Shared/Error.cshtml]

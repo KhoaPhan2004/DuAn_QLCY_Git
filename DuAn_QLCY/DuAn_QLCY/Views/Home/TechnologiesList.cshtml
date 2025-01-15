@@ -1,0 +1,41 @@
+﻿@model IEnumerable<DuAn_QLCY.Models.Technology>
+
+@{
+    ViewData["Title"] = "TechnologiesList";
+}
+
+<h1>TechnologiesList</h1>
+
+<p>
+    <a asp-action="CreateTechnologies">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TechName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TechName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                    <a asp-action="UpdateTechnologies" asp-route-id="@item.TechId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.TechId">Details</a> |
+                    <a asp-action="DeleteTechnologies" asp-route-id="@item.TechId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

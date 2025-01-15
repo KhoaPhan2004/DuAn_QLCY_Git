@@ -1,0 +1,47 @@
+﻿@model IEnumerable<DuAn_QLCY.Models.EmployeeTraining>
+
+@{
+    ViewData["Title"] = "EmployeeTrainingsList";
+}
+
+<h1>EmployeeTrainingsList</h1>
+
+<p>
+    <a asp-action="CreateEmployeeTrainings">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CompletionStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Employee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Program)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompletionStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employee.EmployeeId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Program.ProgramId)
+            </td>
+            <td>
+                    @Html.ActionLink("Edit", "UpdateEmployeeTrainings", new { id = item.EmployeeId, id2 = item.ProgramId }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "DeleteEmployeeTrainings", new { id = item.EmployeeId, id2 = item.ProgramId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -5,6 +5,338 @@
       "PackagePath": "staticwebassets\\DuAn_QLCY.bundle.scp.css"
     },
     {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\css\\theme-rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\theme-rtl.min.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\css\\theme.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\theme.min.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\css\\user-rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\user-rtl.min.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\css\\user.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\user.min.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\data\\usa.js",
+      "PackagePath": "staticwebassets\\assets\\data\\usa.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\data\\world.js",
+      "PackagePath": "staticwebassets\\assets\\data\\world.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\favicons\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicons\\apple-touch-icon.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\favicons\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicons\\favicon-16x16.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\favicons\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicons\\favicon-32x32.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\favicons\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\img\\favicons\\favicon.ico"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\favicons\\manifest.json",
+      "PackagePath": "staticwebassets\\assets\\img\\favicons\\manifest.json"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\favicons\\mstile-150x150.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicons\\mstile-150x150.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\all-night-dark.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\all-night-dark.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\all-night.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\all-night.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\bed-double.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\bed-double.svg"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\bed-double_dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\bed-double_dark.svg"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\best-statistics-dark.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\best-statistics-dark.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\best-statistics.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\best-statistics.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\cloud-upload.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\cloud-upload.svg"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\dollar-alt.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\dollar-alt.svg"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\dollar-alt_dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\dollar-alt_dark.svg"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\editable-features-dark.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\editable-features-dark.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\editable-features.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\editable-features.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\figma.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\figma.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\file-bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\file-bg.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\file-check-alt.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\file-check-alt.svg"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\file-check-alt_dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\file-check-alt_dark.svg"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\file.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\file.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\fly-map-marker.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\fly-map-marker.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\fly-map-marker_dark.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\fly-map-marker_dark.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\11.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\11.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\12.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\12.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\13.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\13.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\14.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\14.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\15.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\15.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\16.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\16.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\17.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\17.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\18.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\18.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\19.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\19.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\21.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\21.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\22.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\22.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\23.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\23.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\24.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\24.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\25.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\25.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\26.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\26.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\bolt.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\bolt.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\edit.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\edit.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\pie.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\pie.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\illustrations\\shield.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\illustrations\\shield.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\image-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\image-icon.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\info.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\info.svg"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\info_dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\info_dark.svg"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\land-map-marker.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\land-map-marker.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\land-map-marker_dark.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\land-map-marker_dark.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\lightning-speed-dark.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\lightning-speed-dark.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\lightning-speed.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\lightning-speed.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\location.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\location.svg"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\location_dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\location_dark.svg"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\logo-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\logo-1.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\logo-bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\logo-bg.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\logo-white.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\logo-white.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\logo.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\long-arrow-down.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\long-arrow-down.svg"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\long-arrow.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\long-arrow.svg"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\picture.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\picture.svg"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\picture_dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\picture_dark.svg"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\plane.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\plane.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\plane_dark.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\plane_dark.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\star.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\star.svg"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\stop.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\stop.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\img\\icons\\thumbs-up.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\thumbs-up.png"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\js\\calendar.js",
+      "PackagePath": "staticwebassets\\assets\\js\\calendar.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\js\\config.js",
+      "PackagePath": "staticwebassets\\assets\\js\\config.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\js\\crm-analytics.js",
+      "PackagePath": "staticwebassets\\assets\\js\\crm-analytics.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\js\\crm-dashboard.js",
+      "PackagePath": "staticwebassets\\assets\\js\\crm-dashboard.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\js\\echarts-example.js",
+      "PackagePath": "staticwebassets\\assets\\js\\echarts-example.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\js\\ecommerce-dashboard.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ecommerce-dashboard.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\js\\file-manager.js",
+      "PackagePath": "staticwebassets\\assets\\js\\file-manager.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\js\\phoenix.js",
+      "PackagePath": "staticwebassets\\assets\\js\\phoenix.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\js\\project-details.js",
+      "PackagePath": "staticwebassets\\assets\\js\\project-details.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\js\\projectmanagement-dashboard.js",
+      "PackagePath": "staticwebassets\\assets\\js\\projectmanagement-dashboard.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\js\\showcase.js",
+      "PackagePath": "staticwebassets\\assets\\js\\showcase.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\assets\\js\\travel-agency-dashboard.js",
+      "PackagePath": "staticwebassets\\assets\\js\\travel-agency-dashboard.js"
+    },
+    {
       "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -243,6 +575,206 @@
     {
       "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\anchorjs\\anchor.min.js",
+      "PackagePath": "staticwebassets\\vendors\\anchorjs\\anchor.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\bigpicture\\BigPicture.js",
+      "PackagePath": "staticwebassets\\vendors\\bigpicture\\BigPicture.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\bootstrap\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\vendors\\bootstrap\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\choices\\choices.min.css",
+      "PackagePath": "staticwebassets\\vendors\\choices\\choices.min.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\choices\\choices.min.js",
+      "PackagePath": "staticwebassets\\vendors\\choices\\choices.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\countup\\countUp.umd.js",
+      "PackagePath": "staticwebassets\\vendors\\countup\\countUp.umd.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\dayjs\\dayjs.min.js",
+      "PackagePath": "staticwebassets\\vendors\\dayjs\\dayjs.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\dhtmlx-gantt\\dhtmlxgantt.css",
+      "PackagePath": "staticwebassets\\vendors\\dhtmlx-gantt\\dhtmlxgantt.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\dhtmlx-gantt\\dhtmlxgantt.js",
+      "PackagePath": "staticwebassets\\vendors\\dhtmlx-gantt\\dhtmlxgantt.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\dropzone\\dropzone-min.js",
+      "PackagePath": "staticwebassets\\vendors\\dropzone\\dropzone-min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\dropzone\\dropzone.css",
+      "PackagePath": "staticwebassets\\vendors\\dropzone\\dropzone.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\echarts\\echarts.min.js",
+      "PackagePath": "staticwebassets\\vendors\\echarts\\echarts.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\feather-icons\\feather.min.js",
+      "PackagePath": "staticwebassets\\vendors\\feather-icons\\feather.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\flatpickr\\flatpickr.min.css",
+      "PackagePath": "staticwebassets\\vendors\\flatpickr\\flatpickr.min.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\flatpickr\\flatpickr.min.js",
+      "PackagePath": "staticwebassets\\vendors\\flatpickr\\flatpickr.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\fontawesome\\all.min.js",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome\\all.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\fullcalendar\\index.global.min.js",
+      "PackagePath": "staticwebassets\\vendors\\fullcalendar\\index.global.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\glightbox\\glightbox.min.css",
+      "PackagePath": "staticwebassets\\vendors\\glightbox\\glightbox.min.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\glightbox\\glightbox.min.js",
+      "PackagePath": "staticwebassets\\vendors\\glightbox\\glightbox.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\imagesloaded\\imagesloaded.pkgd.min.js",
+      "PackagePath": "staticwebassets\\vendors\\imagesloaded\\imagesloaded.pkgd.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\is\\is.min.js",
+      "PackagePath": "staticwebassets\\vendors\\is\\is.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\isotope-layout\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\vendors\\isotope-layout\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\isotope-packery\\packery-mode.pkgd.min.js",
+      "PackagePath": "staticwebassets\\vendors\\isotope-packery\\packery-mode.pkgd.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\leaflet.markercluster\\MarkerCluster.Default.css",
+      "PackagePath": "staticwebassets\\vendors\\leaflet.markercluster\\MarkerCluster.Default.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\leaflet.markercluster\\MarkerCluster.css",
+      "PackagePath": "staticwebassets\\vendors\\leaflet.markercluster\\MarkerCluster.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\leaflet.markercluster\\leaflet.markercluster.js",
+      "PackagePath": "staticwebassets\\vendors\\leaflet.markercluster\\leaflet.markercluster.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\leaflet.tilelayer.colorfilter\\leaflet-tilelayer-colorfilter.min.js",
+      "PackagePath": "staticwebassets\\vendors\\leaflet.tilelayer.colorfilter\\leaflet-tilelayer-colorfilter.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\leaflet\\images\\layers-2x.html",
+      "PackagePath": "staticwebassets\\vendors\\leaflet\\images\\layers-2x.html"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\leaflet\\images\\layers.html",
+      "PackagePath": "staticwebassets\\vendors\\leaflet\\images\\layers.html"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\leaflet\\images\\marker-icon.html",
+      "PackagePath": "staticwebassets\\vendors\\leaflet\\images\\marker-icon.html"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\leaflet\\leaflet.css",
+      "PackagePath": "staticwebassets\\vendors\\leaflet\\leaflet.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\leaflet\\leaflet.js",
+      "PackagePath": "staticwebassets\\vendors\\leaflet\\leaflet.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\list.js\\list.min.js",
+      "PackagePath": "staticwebassets\\vendors\\list.js\\list.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\lodash\\lodash.min.js",
+      "PackagePath": "staticwebassets\\vendors\\lodash\\lodash.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\lottie\\lottie.min.js",
+      "PackagePath": "staticwebassets\\vendors\\lottie\\lottie.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\mapbox-gl\\mapbox-gl.css",
+      "PackagePath": "staticwebassets\\vendors\\mapbox-gl\\mapbox-gl.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\mapbox-gl\\mapbox-gl.js",
+      "PackagePath": "staticwebassets\\vendors\\mapbox-gl\\mapbox-gl.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\nouislider\\nouislider.min.css",
+      "PackagePath": "staticwebassets\\vendors\\nouislider\\nouislider.min.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\nouislider\\nouislider.min.js",
+      "PackagePath": "staticwebassets\\vendors\\nouislider\\nouislider.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\popper\\popper.min.js",
+      "PackagePath": "staticwebassets\\vendors\\popper\\popper.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\prism\\prism-okaidia.css",
+      "PackagePath": "staticwebassets\\vendors\\prism\\prism-okaidia.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\prism\\prism.js",
+      "PackagePath": "staticwebassets\\vendors\\prism\\prism.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\rater-js\\index.js",
+      "PackagePath": "staticwebassets\\vendors\\rater-js\\index.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\simplebar\\simplebar.min.css",
+      "PackagePath": "staticwebassets\\vendors\\simplebar\\simplebar.min.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\simplebar\\simplebar.min.js",
+      "PackagePath": "staticwebassets\\vendors\\simplebar\\simplebar.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\sortablejs\\Sortable.min.js",
+      "PackagePath": "staticwebassets\\vendors\\sortablejs\\Sortable.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\swiper\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\vendors\\swiper\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\swiper\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\vendors\\swiper\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\tinymce\\tinymce.min.js",
+      "PackagePath": "staticwebassets\\vendors\\tinymce\\tinymce.min.js"
+    },
+    {
+      "Id": "D:\\HOCTAP\\TTTNghiep2.0\\DuAn_QLCY_Git\\DuAn_QLCY\\DuAn_QLCY\\wwwroot\\vendors\\typed.js\\typed.umd.js",
+      "PackagePath": "staticwebassets\\vendors\\typed.js\\typed.umd.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DuAn_QLCY.Microsoft.AspNetCore.StaticWebAssets.props",
