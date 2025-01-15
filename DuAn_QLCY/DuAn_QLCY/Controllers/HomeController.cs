@@ -130,10 +130,11 @@ namespace DuAn_QLCY.Controllers
 
             return Ok(new { message = "Department deleted successfully" });
         }
+        [HttpGet]
         public IActionResult EmployeeTypeList()
         {
             var employeetype = _qtCtPmContext.EmployeeTypes.ToList();
-            return View(employeetype);
+            return Json(employeetype);
         }
         public IActionResult CreateEmployeeType()
         {
@@ -226,5 +227,13 @@ namespace DuAn_QLCY.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        [HttpGet]
+        public IActionResult GetProjects()
+        {
+            var projects = _qtCtPmContext.Projects.ToList(); // Lấy tất cả các dự án từ database
+            return Ok(projects); // Trả về danh sách dự án
+        }
+
+
     }
 }
