@@ -1,47 +1,57 @@
 ﻿@model DuAn_QLCY.Models.EmploymentContract
 
 @{
-    ViewData["Title"] = "UpdateEmploymentContracts";
+    ViewData["Title"] = "Update Employment Contract";
 }
 
-<h1>UpdateEmploymentContracts</h1>
+<div class="container mt-5">
+    <h1 class="text-center text-primary mb-4">Cập Nhật Hợp Đồng Lao Động</h1>
+    <p class="text-center text-muted mb-4">Điền thông tin hợp đồng lao động vào biểu mẫu bên dưới. Các trường có dấu <span class="text-danger">*</span> là bắt buộc.</p>
 
-<h4>EmploymentContract</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="UpdateEmploymentContracts">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="ContractId" />
-            <div class="form-group">
-                <label asp-for="EmployeeId" class="control-label"></label>
-                <select asp-for="EmployeeId" class="form-control" asp-items="ViewBag.EmployeesSelectList"></select>
-                <span asp-validation-for="EmployeeId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ContractType" class="control-label"></label>
-                <input asp-for="ContractType" class="form-control" />
-                <span asp-validation-for="ContractType" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="StartDate" class="control-label"></label>
-                <input asp-for="StartDate" class="form-control" />
-                <span asp-validation-for="StartDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="EndDate" class="control-label"></label>
-                <input asp-for="EndDate" class="form-control" />
-                <span asp-validation-for="EndDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <form asp-action="UpdateEmploymentContracts" class="bg-light p-4 rounded shadow">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                
+                <input type="hidden" asp-for="ContractId" />
+                
+                <!-- Employee Dropdown -->
+                <div class="mb-3">
+                    <label asp-for="EmployeeId" class="form-label">Nhân Viên <span class="text-danger">*</span></label>
+                    <select asp-for="EmployeeId" class="form-select" asp-items="ViewBag.EmployeesSelectList">
+                        <option value="">-- Chọn Nhân Viên --</option>
+                    </select>
+                    <span asp-validation-for="EmployeeId" class="text-danger"></span>
+                </div>
+
+                <!-- Contract Type -->
+                <div class="mb-3">
+                    <label asp-for="ContractType" class="form-label">Loại Hợp Đồng <span class="text-danger">*</span></label>
+                    <input asp-for="ContractType" class="form-control" placeholder="Nhập loại hợp đồng" />
+                    <span asp-validation-for="ContractType" class="text-danger"></span>
+                </div>
+
+                <!-- Start Date -->
+                <div class="mb-3">
+                    <label asp-for="StartDate" class="form-label">Ngày Bắt Đầu <span class="text-danger">*</span></label>
+                    <input asp-for="StartDate" type="date" class="form-control" />
+                    <span asp-validation-for="StartDate" class="text-danger"></span>
+                </div>
+
+                <!-- End Date -->
+                <div class="mb-3">
+                    <label asp-for="EndDate" class="form-label">Ngày Kết Thúc <span class="text-danger">*</span></label>
+                    <input asp-for="EndDate" type="date" class="form-control" />
+                    <span asp-validation-for="EndDate" class="text-danger"></span>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <input type="submit" value="Cập Nhật" class="btn btn-primary px-5 py-2" />
+                    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

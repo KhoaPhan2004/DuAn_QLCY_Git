@@ -4,50 +4,47 @@
     ViewData["Title"] = "EmploymentContractsList";
 }
 
-<h1>EmploymentContractsList</h1>
+<div class="container mt-5">
+    <h1 class="text-center text-primary mb-4">Danh Sách Hợp Đồng Lao Động</h1>
 
-<p>
-    <a asp-action="CreateEmploymentContracts">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ContractType)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.StartDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EndDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Employee)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ContractType)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StartDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EndDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Employee.EmployeeId)
-            </td>
-            <td>
-                    <a asp-action="UpdateEmploymentContracts" asp-route-id="@item.ContractId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ContractId">Details</a> |
-                    <a asp-action="DeleteEmploymentContracts" asp-route-id="@item.ContractId">Delete</a>
-            </td>
-        </tr>
+    <div class="d-flex justify-content-between mb-4">
+        <a asp-action="CreateEmploymentContracts" class="btn btn-success"><i class="fas fa-plus"></i> Tạo Mới</a>
+    </div>
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.ContractType)</th>
+                <th>@Html.DisplayNameFor(model => model.StartDate)</th>
+                <th>@Html.DisplayNameFor(model => model.EndDate)</th>
+                <th>@Html.DisplayNameFor(model => model.Employee)</th>
+                <th class="text-center">Hành Động</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.ContractType)</td>
+                <td>@Html.DisplayFor(modelItem => item.StartDate)</td>
+                <td>@Html.DisplayFor(modelItem => item.EndDate)</td>
+                <td>@Html.DisplayFor(modelItem => item.Employee.EmployeeId)</td>
+                <td class="text-center">
+                    <a asp-action="UpdateEmploymentContracts" asp-route-id="@item.ContractId" class="btn btn-warning btn-sm">
+                        <i class="fas fa-edit"></i> Sửa
+                    </a> 
+                    <a asp-action="Details" asp-route-id="@item.ContractId" class="btn btn-info btn-sm">
+                        <i class="fas fa-info-circle"></i> Chi Tiết
+                    </a> 
+                    <a asp-action="DeleteEmploymentContracts" asp-route-id="@item.ContractId" class="btn btn-danger btn-sm">
+                        <i class="fas fa-trash-alt"></i> Xóa
+                    </a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 }
-    </tbody>
-</table>

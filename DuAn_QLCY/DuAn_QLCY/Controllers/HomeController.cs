@@ -223,7 +223,7 @@ namespace DuAn_QLCY.Controllers
         }
         public IActionResult CreateEmploymentContracts()
         {
-            var Employee = _qtCtPmContext.EmploymentContracts.ToList();
+            var Employee = _qtCtPmContext.Employees.ToList();
             ViewBag.EmployeesSelectList = new SelectList(Employee, "EmployeeId", "LastName");
             return View();
         }

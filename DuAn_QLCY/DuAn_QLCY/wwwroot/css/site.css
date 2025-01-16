@@ -100,3 +100,49 @@ body {
         font-size: 1.6rem; /* Tăng kích thước biểu tượng */
         margin-right: 8px; /* Khoảng cách giữa biểu tượng và text */
     }
+
+
+/* project list */
+.animated-title {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Styling for the action buttons */
+.action-btn {
+  margin: 5px;
+  transition: transform 0.3s ease;
+}
+
+.action-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Center the buttons */
+.text-center {
+  text-align: center;
+}
+
+/* Styling for the buttons */
+  /* Styling for the buttons */
+  .btn-sm {
+    width: 120px;  /* Smaller width */
+    font-size: 0.9rem;  /* Smaller font size */
+    padding: 8px;  /* Smaller padding */
+    margin: 5px;
+}
+
+/* Button hover effects */
+.btn-warning:hover {
+    background-color: #f39c12;
+    border-color: #e67e22;
+}
+
+.btn-info:hover {
+    background-color: #3498db;
+    border-color: #2980b9;
+}
+
+.btn-danger:hover {
+    background-color: #e74c3c;
+    border-color: #c0392b;
+}
