@@ -1,22 +1,155 @@
-html {
-  font-size: 14px;
+﻿html {
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+/* css cho employeelist */
+
+/* Hiệu ứng animation cho tiêu đề */
+.animated-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+    animation: slide-in 2s ease-out;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Bảng */
+.table {
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .table thead th {
+        background-color: #0866ff;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .table tbody td {
+        font-weight: 500;
+        color: #333;
+        background-color: #f8f9fa; /* Màu xám nhạt */
+    }
+
+    .table tbody tr:hover {
+        background-color: #f1f1f1;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+/* Nút hành động */
+.action-btn {
+    min-width: 75px; /* Thu ngắn chiều dài nút */
+    padding: 5px 10px; /* Giảm kích thước */
+    font-size: 0.85rem;
+}
+
+    .action-btn i {
+        margin-right: 3px;
+    }
+
+/* Phân trang */
+.pagination-container {
+    margin-top: 20px;
+}
+
+    .pagination-container .page-link {
+        padding: 8px 12px;
+        margin: 0 5px;
+        border-radius: 5px;
+    }
+
+    .pagination-container .page-item.active .page-link {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+
+.btn-large {
+    font-size: 1.5rem; /* Tăng kích thước chữ */
+    padding: 8px 18px; /* Tăng kích thước padding */
+    border-radius: 8px; /* Tăng bo góc cho nút */
+    display: flex; /* Giữ nội dung nút cân đối */
+    align-items: center; /* Căn giữa biểu tượng và text */
+}
+
+    .btn-large i {
+        font-size: 1.6rem; /* Tăng kích thước biểu tượng */
+        margin-right: 8px; /* Khoảng cách giữa biểu tượng và text */
+    }
+
+
+/* project list */
+.animated-title {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Styling for the action buttons */
+.action-btn {
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+    .action-btn:hover {
+        transform: scale(1.1);
+    }
+
+/* Center the buttons */
+.text-center {
+    text-align: center;
+}
+
+/* Styling for the buttons */
+/* Styling for the buttons */
+.btn-sm {
+    width: 120px; /* Smaller width */
+    font-size: 0.9rem; /* Smaller font size */
+    padding: 8px; /* Smaller padding */
+    margin: 5px;
+}
+
+/* Button hover effects */
+.btn-warning:hover {
+    background-color: #f39c12;
+    border-color: #e67e22;
+}
+
+.btn-info:hover {
+    background-color: #3498db;
+    border-color: #2980b9;
+}
+
+.btn-danger:hover {
+    background-color: #e74c3c;
+    border-color: #c0392b;
 }

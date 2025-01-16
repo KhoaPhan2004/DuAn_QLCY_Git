@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<DuAn_QLCY.Models.Project>
+@{
     ViewData["Title"] = "Home Page";
 }
 <style>
@@ -22,7 +23,7 @@
             <div class="card card-stat bg-primary text-white">
                 <div class="card-body">
                     <h5>Total Employees</h5>
-                    <h2>1,234</h2>
+                    <h2>@ViewBag.TotalEmployees</h2>
                 </div>
             </div>
         </div>
@@ -30,7 +31,7 @@
             <div class="card card-stat bg-success text-white">
                 <div class="card-body">
                     <h5>Total Projects</h5>
-                    <h2>567</h2>
+                    <h2>@ViewBag.TotalProjects</h2>
                 </div>
             </div>
         </div>
@@ -38,7 +39,7 @@
             <div class="card card-stat bg-warning text-white">
                 <div class="card-body">
                     <h5>Total Clients</h5>
-                    <h2>890</h2>
+                    <h2>@ViewBag.TotalClients</h2>
                 </div>
             </div>
         </div>
@@ -46,7 +47,7 @@
             <div class="card card-stat bg-danger text-white">
                 <div class="card-body">
                     <h5>Total Revenue</h5>
-                    <h2>$45,678</h2>
+                    <h2>$@ViewBag.Revenue</h2>
                 </div>
             </div>
         </div>
@@ -65,6 +66,7 @@
         </div>
 
         <!-- Table Section -->
+        
         <div class="col-lg-6 col-md-12 mb-4">
             <div class="card">
                 <div class="card-body">
@@ -79,24 +81,28 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Project Alpha</td>
-                                <td><span class="badge bg-success">Completed</span></td>
-                                <td>John Doe</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Project Beta</td>
-                                <td><span class="badge bg-warning">In Progress</span></td>
-                                <td>Jane Smith</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Project Gamma</td>
-                                <td><span class="badge bg-danger">Delayed</span></td>
-                                <td>Michael Lee</td>
-                            </tr>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(modelItem => item.ProjectId)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.ProjectName)</td>
+                                    <td>
+                                        @{
+                                            string statusClass = item.Status switch
+                                            {
+                                                "Hoàn thành" => "bg-success",
+                                                "Đang triển khai" => "bg-warning",
+                                                "Chưa bắt đầu" => "bg-danger",
+                                                _ => "bg-secondary" // Màu mặc định nếu trạng thái không hợp lệ
+                                            };
+                                        }
+                                        <span class="badge @statusClass">@Html.DisplayFor(modelItem => item.Status)</span>
+                                    </td>
+                                    <td>@Html.DisplayFor(modelItem => item.Manager.LastName)</td>
+                                </tr>
+                            }
+
+                            
                         </tbody>
                     </table>
                 </div>

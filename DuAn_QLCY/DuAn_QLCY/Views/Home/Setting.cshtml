@@ -1,0 +1,92 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Setting";
+}
+<div class="container mt-5">
+    <h2>Cài đặt người dùng</h2>
+
+    <!-- Chức năng chọn ngôn ngữ -->
+    <div class="mb-3">
+        <label for="language" class="form-label">Chọn ngôn ngữ</label>
+        <select id="language" class="form-select">
+            <option value="vi">Tiếng Việt</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+
+    <!-- Chức năng chọn màu giao diện -->
+    <div class="mb-3">
+        <label for="themeColor" class="form-label">Chọn màu giao diện</label>
+        <input type="color" id="themeColor" class="form-control" value="#007bff">
+    </div>
+
+    <!-- Chức năng bật/tắt thông báo -->
+    <div class="mb-3 form-check">
+        <input type="checkbox" id="notifications" class="form-check-input" checked>
+        <label class="form-check-label" for="notifications">Bật thông báo</label>
+    </div>
+
+    <!-- Chức năng chọn độ sáng -->
+    <div class="mb-3">
+        <label for="brightness" class="form-label">Chọn độ sáng</label>
+        <input type="range" id="brightness" class="form-range" min="0" max="100" value="80">
+        <span id="brightnessValue">80%</span>
+    </div>
+
+    <!-- Chức năng chỉnh sửa mật khẩu -->
+    <div class="mb-3">
+        <label for="newPassword" class="form-label">Mật khẩu mới</label>
+        <input type="password" id="newPassword" class="form-control" placeholder="Nhập mật khẩu mới">
+    </div>
+
+    <!-- Chức năng chọn kiểu hiển thị bảng điều khiển -->
+    <div class="mb-3">
+        <label for="viewMode" class="form-label">Chọn kiểu hiển thị</label>
+        <select id="viewMode" class="form-select">
+            <option value="grid">Lưới</option>
+            <option value="list">Danh sách</option>
+        </select>
+    </div>
+
+    <!-- Chế độ bảo mật (Xác thực hai yếu tố) -->
+    <div class="mb-3 form-check">
+        <input type="checkbox" id="twoFactorAuth" class="form-check-input">
+        <label class="form-check-label" for="twoFactorAuth">Bật xác thực hai yếu tố</label>
+    </div>
+
+    <!-- Chế độ không làm phiền -->
+    <div class="mb-3 form-check">
+        <input type="checkbox" id="doNotDisturb" class="form-check-input">
+        <label class="form-check-label" for="doNotDisturb">Bật chế độ không làm phiền</label>
+    </div>
+
+    <button class="btn btn-primary">Lưu Cài Đặt</button>
+</div>
+
+<script>
+    // Cập nhật giá trị độ sáng khi thay đổi
+    document.getElementById('brightness').addEventListener('input', function () {
+        document.getElementById('brightnessValue').textContent = this.value + '%';
+    });
+
+    // Thay đổi màu giao diện
+    document.getElementById('themeColor').addEventListener('input', function () {
+        document.body.style.backgroundColor = this.value;
+    });
+
+    // Đổi kiểu hiển thị bảng điều khiển
+    document.getElementById('viewMode').addEventListener('change', function () {
+        if (this.value === 'grid') {
+            // Chuyển sang kiểu lưới
+            document.body.classList.add('grid-view');
+            document.body.classList.remove('list-view');
+        } else {
+            // Chuyển sang kiểu danh sách
+            document.body.classList.add('list-view');
+            document.body.classList.remove('grid-view');
+        }
+    });
+</script>
+

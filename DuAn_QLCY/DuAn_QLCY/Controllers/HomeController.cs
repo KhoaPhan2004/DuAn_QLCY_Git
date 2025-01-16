@@ -21,16 +21,37 @@ namespace DuAn_QLCY.Controllers
             _qtCtPmContext = qtCtPmContext;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int? page)
         {
-            return View();
+            var totalEmployees = _qtCtPmContext.Employees.Count();  // Số lượng nhân viên
+            var totalProjects = _qtCtPmContext.Projects.Count();    // Số lượng dự án
+            var totalClients = _qtCtPmContext.Clients.Count();      // Số lượng khách hàng
+            var totalRevenue = 0;  // Tổng doanh thu từ hóa đơn
+            ViewBag.TotalEmployees = totalEmployees;
+            ViewBag.TotalProjects = totalProjects;
+            ViewBag.TotalClients = totalClients;
+            ViewBag.Revenue = totalRevenue;
+            var Project = _qtCtPmContext.Projects.Include(a => a.Manager).ToPagedList(page ?? 1, 10);
+            return View(Project);
         }
-
+        
         public IActionResult Privacy()
         {
             return View();
         }
-        public IActionResult DepartmentList(int? page)
+
+		public IActionResult Setting()
+		{
+			return View();
+		}
+
+
+
+
+
+
+
+		public IActionResult DepartmentList(int? page)
         {
             var Department = _qtCtPmContext.Departments.ToPagedList(page ?? 1, 10);
             return View(Department);
