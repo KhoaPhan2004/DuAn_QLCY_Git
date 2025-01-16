@@ -1,113 +1,91 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - DuAn_QLCY</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/DuAn_QLCY.styles.css" asp-append-version="true" />
-    <link rel="apple-touch-icon"
-          sizes="180x180"
-          href="~/assets/img/favicons/apple-touch-icon.png" />
-    <link rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="~/assets/img/favicons/favicon-32x32.png" />
-    <link rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="~/assets/img/favicons/favicon-16x16.png" />
-    <link rel="shortcut icon"
-          type="image/x-icon"
-          href="~/assets/img/favicons/favicon.ico" />
-    <link rel="manifest" href="~/assets/img/favicons/manifest.json" />
-    <meta name="msapplication-TileImage"
-          content="~/assets/img/favicons/mstile-150x150.png" />
-    <script src="~/vendors/simplebar/simplebar.min.js"></script>
-    <script src="~/assets/js/config.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com/" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap"
-          rel="stylesheet" />
-    <link href="~/vendors/simplebar/simplebar.min.css" rel="stylesheet" />
-    <link rel="stylesheet"
-          href="../../../unicons.iconscout.com/release/v4.0.8/css/line.css" />
-    <link href="~/assets/css/theme-rtl.min.css"
-          type="text/css"
-          rel="stylesheet"
-          id="style-rtl" />
-    <link href="~/assets/css/theme.min.css"
-          type="text/css"
-          rel="stylesheet"
-          id="style-default" />
-    <link href="~/assets/css/user-rtl.min.css"
-          type="text/css"
-          rel="stylesheet"
-          id="user-style-rtl" />
-    <link href="~/assets/css/user.min.css"
-          type="text/css"
-          rel="stylesheet"
-          id="user-style-default" />
-    <link href="~/vendors/leaflet/leaflet.css" rel="stylesheet" />
-    <link href="~/vendors/leaflet.markercluster/MarkerCluster.css"
-          rel="stylesheet" />
-    <link href="~/vendors/leaflet.markercluster/MarkerCluster.Default.css"
-          rel="stylesheet" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - DuAn_QLCY</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/DuAn_QLCY.styles.css" asp-append-version="true" />
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<meta name="msapplication-TileImage"
+		  content="~/assets/img/favicons/mstile-150x150.png" />
+	<style>
+		.card-stat {
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			transition: transform 0.2s ease;
+		}
+
+			.card-stat:hover {
+				transform: scale(1.05);
+			}
+	</style>
+	<style>
+		/* Sidebar styles */
+		.sidebar {
+			width: 250px; /* Đặt chiều rộng cố định cho sidebar */
+			background-color: #343a40;
+			color: #fff;
+			height: 100vh; /* Chiều cao toàn màn hình */
+			padding-top: 10px;
+			position: fixed; /* Giữ sidebar cố định khi cuộn */
+		}
+
+			.sidebar a {
+				display: block;
+				padding: 10px 20px;
+				color: #fff;
+				text-decoration: none;
+				font-size: 16px;
+				border-bottom: 1px solid #444;
+			}
+
+				.sidebar a:hover {
+					background-color: #495057;
+				}
+
+		
+		/* Main content styles */
+		.content {
+			margin-left: 250px; /* Đẩy nội dung chính sang bên phải */
+			padding: 20px;
+		}
+
+	</style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DuAn_QLCY</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
 
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+	<div class="d-flex">
+		<!-- Sidebar -->
+		<div class="sidebar">
+			<h4 class="text-center py-3 border-bottom">Admin Panel</h4>
+			<a href="#dashboard"><i class="bi bi-speedometer2"></i> Dashboard</a>
+			<a href="#users"><i class="bi bi-people"></i> Users</a>
+			<a href="#orders"><i class="bi bi-basket"></i> Orders</a>
+			<a href="#reports"><i class="bi bi-graph-up"></i> Reports</a>
+			<a href="#products"><i class="bi bi-box"></i> Products</a>
+			<a href="#settings"><i class="bi bi-gear"></i> Settings</a>
+			<a href="#logout"><i class="bi bi-box-arrow-right"></i> Logout</a>
+		</div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - DuAn_QLCY - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/vendors/popper/popper.min.js"></script>
-    <script src="~/vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="~/vendors/anchorjs/anchor.min.js"></script>
-    <script src="~/vendors/is/is.min.js"></script>
-    <script src="~/vendors/fontawesome/all.min.js"></script>
-    <script src="~/vendors/lodash/lodash.min.js"></script>
-    <script src="~/vendors/list.js/list.min.js"></script>
-    <script src="~/vendors/feather-icons/feather.min.js"></script>
-    <script src="~/vendors/dayjs/dayjs.min.js"></script>
-    <script src="~/vendors/leaflet/leaflet.js"></script>
-    <script src="~/vendors/leaflet.markercluster/leaflet.markercluster.js"></script>
-    <script src="~/vendors/leaflet.tilelayer.colorfilter/leaflet-tilelayer-colorfilter.min.js"></script>
-    <script src="~/assets/js/phoenix.js"></script>
-    <script src="~/vendors/echarts/echarts.min.js"></script>
-    <script src="~/assets/js/ecommerce-dashboard.js"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+		<!-- Main Content -->
+		<div class="container-fluid content">
+			<main role="main" class="pb-3">
+				@RenderBody()
+			</main>
+
+			<footer class="border-top footer text-muted">
+				<div class="container">
+					&copy; 2024 - ONKT - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+				</div>
+			</footer>
+		</div>
+	</div>
+	
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
