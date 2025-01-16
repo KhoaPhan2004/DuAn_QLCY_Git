@@ -17,81 +17,103 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DuAn_QLCY
 build_property.RootNamespace = DuAn_QLCY
-build_property.ProjectDir = E:\thực tập cuối kì asp.net\DuAn_QLCY_Git\DuAn_QLCY\DuAn_QLCY\
+build_property.ProjectDir = D:\HOCTAP\TTTNghiep2.0\DuAn_QLCY_Git\DuAn_QLCY\DuAn_QLCY\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\thực tập cuối kì asp.net\DuAn_QLCY_Git\DuAn_QLCY\DuAn_QLCY
+build_property.MSBuildProjectDirectory = D:\HOCTAP\TTTNghiep2.0\DuAn_QLCY_Git\DuAn_QLCY\DuAn_QLCY
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateDepartment.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateDepartment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVEZXBhcnRtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateEmployees.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateEmployees.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVFbXBsb3llZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateEmployeeType.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateEmployeeType.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVFbXBsb3llZVR5cGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/DeleteEmployees.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateEmploymentContracts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVFbXBsb3ltZW50Q29udHJhY3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/CreateProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVQcm9qZWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/DeleteEmployees.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWxldGVFbXBsb3llZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/DepartmentList.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/DepartmentList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXBhcnRtZW50TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/EmployeesList.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/EmployeesList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbXBsb3llZXNMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/EmployeeTypeList.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/EmployeeTypeList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbXBsb3llZVR5cGVMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/Index.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/EmploymentContractsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbXBsb3ltZW50Q29udHJhY3RzTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/Privacy.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateDepartment.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/ProjectList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9qZWN0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateDepartment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVEZXBhcnRtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateEmployees.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateEmployees.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVFbXBsb3llZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateEmployeeType.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateEmployeeType.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVFbXBsb3llZVR5cGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Shared/Error.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateEmploymentContracts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVFbXBsb3ltZW50Q29udHJhY3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Home/UpdateProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVQcm9qZWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/_ViewImports.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/_ViewStart.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/thực tập cuối kì asp.net/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Shared/_Layout.cshtml]
+[D:/HOCTAP/TTTNghiep2.0/DuAn_QLCY_Git/DuAn_QLCY/DuAn_QLCY/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x3loane5xe

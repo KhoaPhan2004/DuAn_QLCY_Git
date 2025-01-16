@@ -239,7 +239,7 @@ namespace DuAn_QLCY.Controllers
         public IActionResult UpdateEmploymentContracts(int id)
         {
             var EmploymentContracts = _qtCtPmContext.EmploymentContracts.Where(t => t.ContractId == id).FirstOrDefault();
-            var Employee = _qtCtPmContext.EmploymentContracts.ToList();
+            var Employee = _qtCtPmContext.Employees.ToList();
             ViewBag.EmployeesSelectList = new SelectList(Employee, "EmployeeId", "LastName");
             return View(EmploymentContracts);
         }
