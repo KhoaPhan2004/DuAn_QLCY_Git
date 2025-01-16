@@ -1,131 +1,132 @@
 ﻿@model DuAn_QLCY.Models.Employee
 
 @{
-    ViewData["Title"] = "DetailEmployees";
+    ViewData["Title"] = "Employee Details";
 }
 
-<h1>DetailEmployees</h1>
+<div class="container mt-5">
+    <h1 class="text-center">Employee Details</h1>
+    <div class="card shadow-lg">
+        <div class="card-body">
+            <h4 class="card-title">Employee Information</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.FirstName)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.FirstName)</dd>
 
-<div>
-    <h4>Employee</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.FirstName)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.FirstName)</dd>
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.LastName)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.LastName)</dd>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.LastName)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.LastName)</dd>
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Position)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Position)</dd>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Position)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.Position)</dd>
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Email)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Email)</dd>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Email)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.Email)</dd>
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.PhoneNumber)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.PhoneNumber)</dd>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.PhoneNumber)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.PhoneNumber)</dd>
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.DayOfBirth)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.DayOfBirth)</dd>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.DayOfBirth)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.DayOfBirth)</dd>
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Gender)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Gender)</dd>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Gender)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.Gender)</dd>
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.JoiningDate)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.JoiningDate)</dd>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.JoiningDate)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.JoiningDate)</dd>
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Nationality)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Nationality)</dd>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Nationality)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.Nationality)</dd>
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Address)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Address)</dd>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Address)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.Address)</dd>
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Department)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Department.DepartmentName)</dd>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Department)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.Department.DepartmentName)</dd>
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Type)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Type.TypeName)</dd>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Type)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.Type.TypeName)</dd>
+                <dt class="col-sm-3">Employment Contracts</dt>
+                <dd class="col-sm-9">
+                    @foreach (var contract in Model.EmploymentContracts)
+                    {
+                        <div>@contract.ContractType</div>
+                    }
+                </dd>
 
-        <dt class="col-sm-2">Employment Contracts</dt>
-        <dd class="col-sm-10">
-            @foreach (var contract in Model.EmploymentContracts)
-            {
-                <div>@contract.ContractType</div>
-            }
-        </dd>
+                <dt class="col-sm-3">Salary</dt>
+                <dd class="col-sm-9">@Model.Salary?.Salary1</dd>
 
-        <dt class="col-sm-2">Salary</dt>
-        <dd class="col-sm-10">@Model.Salary?.Salary1</dd>
+                <dt class="col-sm-3">Performance KPIs</dt>
+                <dd class="col-sm-9">
+                    @foreach (var kpi in Model.PerformanceKpis)
+                    {
+                        <div>@kpi.Kpivalue</div>
+                    }
+                </dd>
 
-        <dt class="col-sm-2">Performance KPIs</dt>
-        <dd class="col-sm-10">
-            @foreach (var kpi in Model.PerformanceKpis)
-            {
-                <div> @kpi.Kpivalue</div>
-            }
-        </dd>
+                <dt class="col-sm-3">Projects</dt>
+                <dd class="col-sm-9">
+                    @foreach (var project in Model.Projects)
+                    {
+                        <div>@project.ProjectName</div>
+                    }
+                </dd>
 
-        <dt class="col-sm-2">Projects</dt>
-        <dd class="col-sm-10">
-            @foreach (var project in Model.Projects)
-            {
-                <div>@project.ProjectName</div>
-            }
-        </dd>
+                <dt class="col-sm-3">Tasks</dt>
+                <dd class="col-sm-9">
+                    @foreach (var task in Model.Tasks)
+                    {
+                        <div>@task.TaskName</div>
+                    }
+                </dd>
 
-        <dt class="col-sm-2">Tasks</dt>
-        <dd class="col-sm-10">
-            @foreach (var task in Model.Tasks)
-            {
-                <div>@task.TaskName</div>
-            }
-        </dd>
+                <dt class="col-sm-3">Time Trackings</dt>
+                <dd class="col-sm-9">
+                    @foreach (var tracking in Model.TimeTrackings)
+                    {
+                        <div>@tracking.Date: @tracking.HoursWorked hrs</div>
+                    }
+                </dd>
 
-        <dt class="col-sm-2">Time Trackings</dt>
-        <dd class="col-sm-10">
-            @foreach (var tracking in Model.TimeTrackings)
-            {
-                <div>@tracking.Date: @tracking.HoursWorked hrs</div>
-            }
-        </dd>
+                <dt class="col-sm-3">Technologies</dt>
+                <dd class="col-sm-9">
+                    @foreach (var tech in Model.EmployeeTechnologies)
+                    {
+                        <div>@tech.Tech.TechName</div>
+                    }
+                </dd>
 
-        <dt class="col-sm-2">Technologies</dt>
-        <dd class="col-sm-10">
-            @foreach (var tech in Model.EmployeeTechnologies)
-            {
-                <div>@tech.Tech.TechName</div>
-            }
-        </dd>
+                <dt class="col-sm-3">Trainings</dt>
+                <dd class="col-sm-9">
+                    @foreach (var training in Model.EmployeeTrainings)
+                    {
+                        <div>@training.Program.ProgramName</div>
+                    }
+                </dd>
 
-        <dt class="col-sm-2">Trainings</dt>
-        <dd class="col-sm-10">
-            @foreach (var training in Model.EmployeeTrainings)
-            {
-                <div>@training.Program.ProgramName</div>
-            }
-        </dd>
+                <dt class="col-sm-3">Insurances</dt>
+                <dd class="col-sm-9">
+                    @foreach (var insurance in Model.Insurances)
+                    {
+                        <div>@insurance.InsuranceCode</div>
+                    }
+                </dd>
 
-        <dt class="col-sm-2">Insurances</dt>
-        <dd class="col-sm-10">
-            @foreach (var insurance in Model.Insurances)
-            {
-                <div>@insurance.InsuranceCode</div>
-            }
-        </dd>
+                <dt class="col-sm-3">Leaves</dt>
+                <dd class="col-sm-9">
+                    @foreach (var leave in Model.Leaves)
+                    {
+                        <div>@leave.StartDate:@leave.EndDate: @leave.Reason</div>
+                    }
+                </dd>
+            </dl>
+        </div>
+    </div>
 
-        <dt class="col-sm-2">Leaves</dt>
-        <dd class="col-sm-10">
-            @foreach (var leave in Model.Leaves)
-            {
-                <div>@leave.StartDate:@leave.EndDate: @leave.Reason</div>
-            }
-        </dd>
-
-     @*     <dt class="col-sm-2">Users</dt>
-         <dd class="col-sm-10">@Model.Users?.UserName</dd> *@
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.EmployeeId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <div class="text-center mt-4">
+        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model?.EmployeeId">Edit</a>
+        <a class="btn btn-secondary" asp-action="Index">Back to List</a>
+    </div>
 </div>
