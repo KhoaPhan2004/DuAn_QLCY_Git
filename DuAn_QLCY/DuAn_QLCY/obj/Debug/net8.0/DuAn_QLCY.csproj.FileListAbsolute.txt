@@ -629,3 +629,4 @@ D:\HOCTAP\TTTNghiep2.0\DuAn_QLCY_Git\DuAn_QLCY\DuAn_QLCY\bin\Debug\net8.0\runtim
 D:\HOCTAP\TTTNghiep2.0\DuAn_QLCY_Git\DuAn_QLCY\DuAn_QLCY\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\HOCTAP\TTTNghiep2.0\DuAn_QLCY_Git\DuAn_QLCY\DuAn_QLCY\bin\Debug\net8.0\Microsoft.AspNetCore.SpaServices.Extensions.dll
 D:\HOCTAP\TTTNghiep2.0\DuAn_QLCY_Git\DuAn_QLCY\DuAn_QLCY\bin\Debug\net8.0\Tailwind.Extensions.AspNetCore.dll
+D:\HOCTAP\TTTNghiep2.0\DuAn_QLCY_Git\DuAn_QLCY\DuAn_QLCY\bin\Debug\net8.0\bundleconfig.json

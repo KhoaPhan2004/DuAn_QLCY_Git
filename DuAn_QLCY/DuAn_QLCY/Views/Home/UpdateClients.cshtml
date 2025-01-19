@@ -1,49 +1,60 @@
 ﻿@model DuAn_QLCY.Models.Client
 
 @{
-    ViewData["Title"] = "UpdateClients";
+    ViewData["Title"] = "Cập Nhật Khách Hàng";
 }
 
-<h1>UpdateClients</h1>
+<div class="container mt-5">
+    <h1 class="text-center text-primary mb-4">Cập Nhật Thông Tin Khách Hàng</h1>
+    <p class="text-center text-muted mb-4">Điền thông tin khách hàng vào biểu mẫu bên dưới.</p>
 
-<h4>Client</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="UpdateClients">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="ClientId" />
-            <div class="form-group">
-                <label asp-for="CompanyName" class="control-label"></label>
-                <input asp-for="CompanyName" class="form-control" />
-                <span asp-validation-for="CompanyName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ContactName" class="control-label"></label>
-                <input asp-for="ContactName" class="form-control" />
-                <span asp-validation-for="ContactName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ContactEmail" class="control-label"></label>
-                <input asp-for="ContactEmail" class="form-control" />
-                <span asp-validation-for="ContactEmail" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PhoneNumber" class="control-label"></label>
-                <input asp-for="PhoneNumber" class="form-control" />
-                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <form asp-action="UpdateClients" class="bg-white p-4 rounded shadow-lg border border-light">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger mb-3"></div>
+
+                <input type="hidden" asp-for="ClientId" />
+
+                <!-- Tên Công Ty -->
+                <div class="mb-4">
+                    <label asp-for="CompanyName" class="form-label fs-5 fw-bold text-dark">Tên Công Ty</label>
+                    <input asp-for="CompanyName" class="form-control form-control-lg shadow-sm" placeholder="Nhập tên công ty" />
+                    <span asp-validation-for="CompanyName" class="text-danger"></span>
+                </div>
+
+                <!-- Tên Người Liên Hệ -->
+                <div class="mb-4">
+                    <label asp-for="ContactName" class="form-label fs-5 fw-bold text-dark">Tên Người Liên Hệ</label>
+                    <input asp-for="ContactName" class="form-control form-control-lg shadow-sm" placeholder="Nhập tên người liên hệ" />
+                    <span asp-validation-for="ContactName" class="text-danger"></span>
+                </div>
+
+                <!-- Email Người Liên Hệ -->
+                <div class="mb-4">
+                    <label asp-for="ContactEmail" class="form-label fs-5 fw-bold text-dark">Email Người Liên Hệ</label>
+                    <input asp-for="ContactEmail" class="form-control form-control-lg shadow-sm" placeholder="Nhập email người liên hệ" />
+                    <span asp-validation-for="ContactEmail" class="text-danger"></span>
+                </div>
+
+                <!-- Số Điện Thoại -->
+                <div class="mb-4">
+                    <label asp-for="PhoneNumber" class="form-label fs-5 fw-bold text-dark">Số Điện Thoại</label>
+                    <input asp-for="PhoneNumber" class="form-control form-control-lg shadow-sm" placeholder="Nhập số điện thoại" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+
+                <!-- Nút Lưu -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <input type="submit" value="Lưu Thông Tin" class="btn btn-primary btn-lg px-5 py-3 fw-bold" />
+                    <a asp-action="Index" class="btn btn-secondary btn-lg px-5 py-3 fw-bold">Quay Lại</a>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

@@ -1,7 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
     ViewData["Title"] = "Setting";
 }
 <div class="container mt-5">
@@ -68,12 +65,15 @@
 <script>
     // Cập nhật giá trị độ sáng khi thay đổi
     document.getElementById('brightness').addEventListener('input', function () {
-        document.getElementById('brightnessValue').textContent = this.value + '%';
+        const brightnessValue = this.value;
+        document.getElementById('brightnessValue').textContent = brightnessValue + '%';
+        // Áp dụng bộ lọc độ sáng cho toàn bộ trang
+        document.body.style.filter = `brightness(${brightnessValue}%)`;
     });
 
     // Thay đổi màu giao diện
     document.getElementById('themeColor').addEventListener('input', function () {
-        document.body.style.backgroundColor = this.value;
+        document.body.style.backgroundColor = this.value; // Thay đổi màu nền của trang
     });
 
     // Đổi kiểu hiển thị bảng điều khiển
@@ -88,5 +88,37 @@
             document.body.classList.remove('grid-view');
         }
     });
-</script>
 
+    // Xử lý bật/tắt thông báo
+    document.getElementById('notifications').addEventListener('change', function () {
+        if (this.checked) {
+            console.log('Thông báo đã bật');
+            // Bạn có thể thực hiện hành động bật thông báo ở đây
+        } else {
+            console.log('Thông báo đã tắt');
+            // Bạn có thể thực hiện hành động tắt thông báo ở đây
+        }
+    });
+
+    // Xử lý bật xác thực hai yếu tố
+    document.getElementById('twoFactorAuth').addEventListener('change', function () {
+        if (this.checked) {
+            console.log('Xác thực hai yếu tố đã bật');
+            // Thực hiện hành động bật xác thực hai yếu tố
+        } else {
+            console.log('Xác thực hai yếu tố đã tắt');
+            // Thực hiện hành động tắt xác thực hai yếu tố
+        }
+    });
+
+    // Xử lý chế độ không làm phiền
+    document.getElementById('doNotDisturb').addEventListener('change', function () {
+        if (this.checked) {
+            console.log('Chế độ không làm phiền đã bật');
+            // Thực hiện hành động bật chế độ không làm phiền
+        } else {
+            console.log('Chế độ không làm phiền đã tắt');
+            // Thực hiện hành động tắt chế độ không làm phiền
+        }
+    });
+</script>

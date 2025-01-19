@@ -20,4 +20,6 @@ public partial class User
     public DateTime UpdatedAt { get; set; }
 
     public virtual Employee Employee { get; set; } = null!;
+
+    public virtual ICollection<Notification> Notifications { get; set; } = new List<Notification>();
 }

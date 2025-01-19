@@ -33,6 +33,8 @@ public partial class QlCtPmContext : DbContext
 
     public virtual DbSet<Leaf> Leaves { get; set; }
 
+    public virtual DbSet<Notification> Notifications { get; set; }
+
     public virtual DbSet<PerformanceKpi> PerformanceKpis { get; set; }
 
     public virtual DbSet<Project> Projects { get; set; }
@@ -52,14 +54,14 @@ public partial class QlCtPmContext : DbContext
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=KHOA; Database=QL_CT_PM; Trusted_Connection = True; TrustServerCertificate=True;");
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Server=Khoa; Database=QL_CT_PM; Trusted_Connection =  True; Trust Server Certificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Client>(entity =>
         {
-            entity.HasKey(e => e.ClientId).HasName("PK__Clients__E67E1A04648AC4DE");
+            entity.HasKey(e => e.ClientId).HasName("PK__Clients__E67E1A04DADCE6F9");
 
             entity.Property(e => e.ClientId).HasColumnName("ClientID");
             entity.Property(e => e.CompanyName).HasMaxLength(255);
@@ -70,7 +72,7 @@ public partial class QlCtPmContext : DbContext
 
         modelBuilder.Entity<Department>(entity =>
         {
-            entity.HasKey(e => e.DepartmentId).HasName("PK__Departme__B2079BCD7D1C0F6A");
+            entity.HasKey(e => e.DepartmentId).HasName("PK__Departme__B2079BCD83E6ACD7");
 
             entity.Property(e => e.DepartmentId).HasColumnName("DepartmentID");
             entity.Property(e => e.DepartmentName).HasMaxLength(100);
@@ -78,7 +80,7 @@ public partial class QlCtPmContext : DbContext
 
         modelBuilder.Entity<Employee>(entity =>
         {
-            entity.HasKey(e => e.EmployeeId).HasName("PK__Employee__7AD04FF1057D2176");
+            entity.HasKey(e => e.EmployeeId).HasName("PK__Employee__7AD04FF126F46BD2");
 
             entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
             entity.Property(e => e.DepartmentId).HasColumnName("DepartmentID");
@@ -102,7 +104,7 @@ public partial class QlCtPmContext : DbContext
 
         modelBuilder.Entity<EmployeeTechnology>(entity =>
         {
-            entity.HasKey(e => new { e.EmployeeId, e.TechId }).HasName("PK__Employee__927FB478AD94A770");
+            entity.HasKey(e => new { e.EmployeeId, e.TechId }).HasName("PK__Employee__927FB4780DAAA8DF");
 
             entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
             entity.Property(e => e.TechId).HasColumnName("TechID");
@@ -120,7 +122,7 @@ public partial class QlCtPmContext : DbContext
 
         modelBuilder.Entity<EmployeeTraining>(entity =>
         {
-            entity.HasKey(e => new { e.EmployeeId, e.ProgramId }).HasName("PK__Employee__ED8219F22F7215EA");
+            entity.HasKey(e => new { e.EmployeeId, e.ProgramId }).HasName("PK__Employee__ED8219F22C8E6F7E");
 
             entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
             entity.Property(e => e.ProgramId).HasColumnName("ProgramID");
@@ -139,7 +141,7 @@ public partial class QlCtPmContext : DbContext
 
         modelBuilder.Entity<EmployeeType>(entity =>
         {
-            entity.HasKey(e => e.TypeId).HasName("PK__Employee__516F0395ECF5E7C0");
+            entity.HasKey(e => e.TypeId).HasName("PK__Employee__516F03951544CED3");
 
             entity.Property(e => e.TypeId).HasColumnName("TypeID");
             entity.Property(e => e.TypeName).HasMaxLength(100);
@@ -147,7 +149,7 @@ public partial class QlCtPmContext : DbContext
 
         modelBuilder.Entity<EmploymentContract>(entity =>
         {
-            entity.HasKey(e => e.ContractId).HasName("PK__Employme__C90D3409A0829C2A");
+            entity.HasKey(e => e.ContractId).HasName("PK__Employme__C90D3409259A6800");
 
             entity.Property(e => e.ContractId).HasColumnName("ContractID");
             entity.Property(e => e.ContractType).HasMaxLength(50);
@@ -160,7 +162,7 @@ public partial class QlCtPmContext : DbContext
 
         modelBuilder.Entity<Insurance>(entity =>
         {
-            entity.HasKey(e => e.InsuranceCode).HasName("PK__Insuranc__E916199DA208E23F");
+            entity.HasKey(e => e.InsuranceCode).HasName("PK__Insuranc__E916199D8F3C8D6B");
 
             entity.Property(e => e.CoverageAmount).HasColumnType("decimal(8, 2)");
             entity.Property(e => e.CreatedAt)
@@ -182,7 +184,7 @@ public partial class QlCtPmContext : DbContext
 
         modelBuilder.Entity<Leaf>(entity =>
         {
-            entity.HasKey(e => e.LeaveId).HasName("PK__Leaves__796DB979A27F7C06");
+            entity.HasKey(e => e.LeaveId).HasName("PK__Leaves__796DB979A974ACA3");
 
             entity.Property(e => e.LeaveId).HasColumnName("LeaveID");
             entity.Property(e => e.CreatedAt)
@@ -202,9 +204,27 @@ public partial class QlCtPmContext : DbContext
                 .HasConstraintName("FK_Leaves_Employees");
         });
 
+        modelBuilder.Entity<Notification>(entity =>
+        {
+            entity.HasKey(e => e.NotificationId).HasName("PK__Notifica__20CF2E321C8F98E6");
+
+            entity.Property(e => e.NotificationId).HasColumnName("NotificationID");
+            entity.Property(e => e.IsRead).HasDefaultValue(false);
+            entity.Property(e => e.NotificationTime)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.Title).HasMaxLength(255);
+            entity.Property(e => e.UserId).HasColumnName("UserID");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Notifications)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Notificat__UserI__17F790F9");
+        });
+
         modelBuilder.Entity<PerformanceKpi>(entity =>
         {
-            entity.HasKey(e => e.Kpiid).HasName("PK__Performa__72E69281752F342F");
+            entity.HasKey(e => e.Kpiid).HasName("PK__Performa__72E69281117AD390");
 
             entity.ToTable("PerformanceKPIs");
 
@@ -222,7 +242,7 @@ public partial class QlCtPmContext : DbContext
 
         modelBuilder.Entity<Project>(entity =>
         {
-            entity.HasKey(e => e.ProjectId).HasName("PK__Projects__761ABED0130A0DAD");
+            entity.HasKey(e => e.ProjectId).HasName("PK__Projects__761ABED0E6641E47");
 
             entity.Property(e => e.ProjectId).HasColumnName("ProjectID");
             entity.Property(e => e.ClientId).HasColumnName("ClientID");
@@ -241,7 +261,7 @@ public partial class QlCtPmContext : DbContext
 
         modelBuilder.Entity<ProjectDetail>(entity =>
         {
-            entity.HasKey(e => e.DetailsId).HasName("PK__ProjectD__BAC862ACF221BA54");
+            entity.HasKey(e => e.DetailsId).HasName("PK__ProjectD__BAC862AC272DD465");
 
             entity.Property(e => e.DetailsId).HasColumnName("DetailsID");
             entity.Property(e => e.ActualBudget).HasColumnType("decimal(10, 2)");
@@ -262,7 +282,7 @@ public partial class QlCtPmContext : DbContext
 
         modelBuilder.Entity<Salary>(entity =>
         {
-            entity.HasKey(e => e.EmployeeId).HasName("PK__Salaries__7AD04FF10D23D601");
+            entity.HasKey(e => e.EmployeeId).HasName("PK__Salaries__7AD04FF172903FD0");
 
             entity.Property(e => e.EmployeeId)
                 .ValueGeneratedNever()
@@ -280,7 +300,7 @@ public partial class QlCtPmContext : DbContext
 
         modelBuilder.Entity<Task>(entity =>
         {
-            entity.HasKey(e => e.TaskId).HasName("PK__Tasks__7C6949D1E72066CD");
+            entity.HasKey(e => e.TaskId).HasName("PK__Tasks__7C6949D1909416C5");
 
             entity.Property(e => e.TaskId).HasColumnName("TaskID");
             entity.Property(e => e.ProjectId).HasColumnName("ProjectID");
@@ -299,7 +319,7 @@ public partial class QlCtPmContext : DbContext
 
         modelBuilder.Entity<Technology>(entity =>
         {
-            entity.HasKey(e => e.TechId).HasName("PK__Technolo__8AFFB89F227EEC50");
+            entity.HasKey(e => e.TechId).HasName("PK__Technolo__8AFFB89F3D5F7906");
 
             entity.Property(e => e.TechId).HasColumnName("TechID");
             entity.Property(e => e.TechName).HasMaxLength(100);
@@ -307,7 +327,7 @@ public partial class QlCtPmContext : DbContext
 
         modelBuilder.Entity<TimeTracking>(entity =>
         {
-            entity.HasKey(e => e.EntryId).HasName("PK__TimeTrac__F57BD2D7844CD744");
+            entity.HasKey(e => e.EntryId).HasName("PK__TimeTrac__F57BD2D71C26E4B7");
 
             entity.ToTable("TimeTracking");
 
@@ -327,7 +347,7 @@ public partial class QlCtPmContext : DbContext
 
         modelBuilder.Entity<TrainingProgram>(entity =>
         {
-            entity.HasKey(e => e.ProgramId).HasName("PK__Training__7525603817B9B8FB");
+            entity.HasKey(e => e.ProgramId).HasName("PK__Training__7525603838BFFD9B");
 
             entity.Property(e => e.ProgramId).HasColumnName("ProgramID");
             entity.Property(e => e.ProgramName).HasMaxLength(255);
@@ -336,7 +356,7 @@ public partial class QlCtPmContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Users__3214EC27A03F76D4");
+            entity.HasKey(e => e.Id).HasName("PK__Users__3214EC275C173F4B");
 
             entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.CreatedAt)

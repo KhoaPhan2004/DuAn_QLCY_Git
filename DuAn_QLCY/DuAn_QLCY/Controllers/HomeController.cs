@@ -46,12 +46,11 @@ namespace DuAn_QLCY.Controllers
 		}
 
 
+        
 
 
 
-
-
-		public IActionResult DepartmentList(int? page)
+        public IActionResult DepartmentList(int? page)
         {
             var Department = _qtCtPmContext.Departments.ToPagedList(page ?? 1, 10);
             return View(Department);

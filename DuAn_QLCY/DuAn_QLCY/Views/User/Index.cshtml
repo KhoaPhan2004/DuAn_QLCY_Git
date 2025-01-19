@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "Trang Chính";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Cột chức năng -->
+        
+
+        <!-- Cột thông báo và thành tích -->
+        <div class="col-md-9">
+            <div class="row">
+                <!-- Bảng thông báo -->
+                <div class="col-md-6">
+                    <h4>Thông Báo</h4>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Tiêu Đề</th>
+                                <th>Nội Dung</th>
+                                <th>Thời Gian</th>
+                                <th>Trạng Thái</th>
+                                <th>Hành Động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Thông báo A</td>
+                                <td>Nội dung thông báo A</td>
+                                <td>2025-01-16 08:00</td>
+                                <td><span class="badge badge-warning">Chưa đọc</span></td>
+                                <td><button class="btn btn-primary btn-sm">Đánh dấu đã đọc</button></td>
+                            </tr>
+                            <tr>
+                                <td>Thông báo B</td>
+                                <td>Nội dung thông báo B</td>
+                                <td>2025-01-15 14:00</td>
+                                <td><span class="badge badge-success">Đã đọc</span></td>
+                                <td><button class="btn btn-primary btn-sm" disabled>Đã đọc</button></td>
+                            </tr>
+                            <tr>
+                                <td>Thông báo C</td>
+                                <td>Nội dung thông báo C</td>
+                                <td>2025-01-14 09:00</td>
+                                <td><span class="badge badge-warning">Chưa đọc</span></td>
+                                <td><button class="btn btn-primary btn-sm">Đánh dấu đã đọc</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Bảng thành tích -->
+                <div class="col-md-6">
+                    <h4>Thành Tích</h4>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Thành Tích</th>
+                                <th>Điểm</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Hoàn thành dự án A</td>
+                                <td>90</td>
+                            </tr>
+                            <tr>
+                                <td>Tham gia khóa học B</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Đạt thành tích xuất sắc</td>
+                                <td>95</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

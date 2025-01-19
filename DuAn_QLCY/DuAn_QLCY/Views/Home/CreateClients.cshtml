@@ -1,48 +1,59 @@
 ﻿@model DuAn_QLCY.Models.Client
 
 @{
-    ViewData["Title"] = "CreateClients";
+    ViewData["Title"] = "Create Clients";
 }
 
-<h1>CreateClients</h1>
-
-<h4>Client</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="container mt-5">
+    <h1 class="text-center text-primary mb-4">Create New Client</h1>
+    <div class="card shadow-lg p-4 rounded">
+        <h4 class="text-center text-secondary mb-3">Client Information</h4>
+        <hr />
         <form asp-action="CreateClients">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="CompanyName" class="control-label"></label>
-                <input asp-for="CompanyName" class="form-control" />
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+            <!-- Company Name -->
+            <div class="mb-4">
+                <label asp-for="CompanyName" class="form-label fs-5 fw-bold text-dark">Company Name</label>
+                <input asp-for="CompanyName" class="form-control form-control-lg shadow-sm" placeholder="Enter company name" />
                 <span asp-validation-for="CompanyName" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="ContactName" class="control-label"></label>
-                <input asp-for="ContactName" class="form-control" />
+
+            <!-- Contact Name -->
+            <div class="mb-4">
+                <label asp-for="ContactName" class="form-label fs-5 fw-bold text-dark">Contact Name</label>
+                <input asp-for="ContactName" class="form-control form-control-lg shadow-sm" placeholder="Enter contact name" />
                 <span asp-validation-for="ContactName" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="ContactEmail" class="control-label"></label>
-                <input asp-for="ContactEmail" class="form-control" />
+
+            <!-- Contact Email -->
+            <div class="mb-4">
+                <label asp-for="ContactEmail" class="form-label fs-5 fw-bold text-dark">Contact Email</label>
+                <input asp-for="ContactEmail" class="form-control form-control-lg shadow-sm" placeholder="Enter contact email" />
                 <span asp-validation-for="ContactEmail" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="PhoneNumber" class="control-label"></label>
-                <input asp-for="PhoneNumber" class="form-control" />
+
+            <!-- Phone Number -->
+            <div class="mb-4">
+                <label asp-for="PhoneNumber" class="form-label fs-5 fw-bold text-dark">Phone Number</label>
+                <input asp-for="PhoneNumber" class="form-control form-control-lg shadow-sm" placeholder="Enter phone number" />
                 <span asp-validation-for="PhoneNumber" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+
+            <!-- Submit Button -->
+            <div class="text-center mb-4">
+                <input type="submit" value="Create Client" class="btn btn-primary btn-lg px-5 py-3 fw-bold" />
             </div>
         </form>
+
+        <div class="text-center">
+            <a asp-action="Index" class="btn btn-outline-secondary btn-lg">Back to Client List</a>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
